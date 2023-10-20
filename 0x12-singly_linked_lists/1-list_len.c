@@ -2,11 +2,11 @@
 #include "lists.h"
 
 /**
- * print_list - singly linked list
+ * list_len - singly linked list
  * @h: Pointer that loops through the next node
  *
  * Description: singly linked list node structure
- * Return: @n onSuccess afterExec=while(loop)
+ * Return: @n onSuccess then end.
  */
 
 size_t list_len(const list_t *h)
