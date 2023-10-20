@@ -5,12 +5,17 @@
             "label": "C/C++: gcc build active file",
             "command": "/usr/bin/gcc",
             "args": [
+                "-Wall",
+                "-pedantic",
+                "-Werror",
+                "-Wextra",
+                "-std=gnu89",
                 "-fdiagnostics-color=always",
                 "-g",
+                "${fileDirname}/../*.c",
                 "${file}",
-                "${fileDirname}/test/main.c",
                 "-o",
-                "${fileDirname}/bin/${fileBasenameNoExtension}"
+                "${fileDirname}/../bin/${fileBasenameNoExtension}"
             ],
             "options": {
                 "cwd": "${fileDirname}"
