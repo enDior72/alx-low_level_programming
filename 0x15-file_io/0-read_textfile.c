@@ -9,7 +9,7 @@
  *
  * Return: if successful, the number of bytes read,
  * otherwise, 0.
-*/
+ */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
@@ -46,4 +46,3 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	free(buffer);
 	return (fd_w);
 }
-
